@@ -1,6 +1,6 @@
 @import "bourbon/bourbon"
 @import "fonts.sass"
-@import "skins/tomato.sass"
+@import "skins/theme.sass"
 
 body
 	font-family: "Raleway", sans-serif
@@ -47,9 +47,7 @@ li
 	.fa:hover
 		color: yellow
 		opacity: .8
-.top_menu
-	.list_item
-		color: white	
+	
 
 .loader
 	background: none repeat scroll 0 0 #ffffff
@@ -110,8 +108,8 @@ section,
 	position: fixed
 	z-index: 100
 	border: none
-	right: 20px
-	top: 20px
+	right: 60px
+	top: 50px
 	animation-delay: 1s
 	span
 		display: block
@@ -447,3 +445,43 @@ $h: 3px
 		font-size: 11px
 		margin-top: 5px
 		display: block		
+
+@import "media.sass"
+
+/*==========  Desktop First Method  ==========*/
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) 
+    .resume_container .left,
+    .resume_container .right 
+        text-align: center
+    
+    .port_item .port_item_cont 
+        margin-bottom: 10px
+    
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) 
+    .top_wrapper .top_text h1 
+        font-size: 20px
+        padding-right: 10px
+    
+    .top_wrapper .top_text p 
+        font-size: 16px
+    
+    .port_item .port_item_cont 
+        margin-bottom: 10px
+    
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) 
+    .top_wrapper .top_text h1 
+        font-size: 18px
+        padding: 0px 10px
+
+
+/*==========  Mobile First Method  ==========*/
+
